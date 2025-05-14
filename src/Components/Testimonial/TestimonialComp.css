@@ -1,0 +1,55 @@
+.testimoniacardbody {
+  background-color: #1c1d1f;
+  width: fit-content;
+  border-radius: 4rem;
+  padding: 2.5rem;
+  max-width: 70%;
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userimg {
+  max-width: 25%;
+}
+.userimageset {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.username {
+  font-family: Syne;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.userprofession {
+  font-family: Syne;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.userlocation {
+  font-family: Syne;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ratingimgset {
+  max-width: 10vw;
+}
+
+@media (max-width: 768px) {
+  .ratingimgset {
+    max-width: 40vw;
+  }
+  .testimoniacardbody {
+    max-width: 80%;
+  }
+}

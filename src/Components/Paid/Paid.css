@@ -1,0 +1,115 @@
+.paidcontainer {
+  background-color: #1c1c1e;
+}
+.getpaidvector {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.br {
+  border-radius: 3rem;
+  width: 85%;
+}
+.greenbgimage {
+  background: linear-gradient(113.82deg, #4ab11f 18.36%, #015be4 81.67%);
+  width: 75%;
+  border-radius: 2rem;
+  background-size: contain;
+  margin: auto;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+.waterimage {
+  background-image: url("../../Assets/watereffect.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+.paidright {
+  width: 39%;
+  color: #fefeff;
+}
+.paidrighttitle {
+  font-family: Syne;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.paidrightdesc {
+  font-family: Syne;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0px;
+  text-align: left;
+  margin: 2.5rem 0rem;
+}
+.downloadbuttong {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.paidleft {
+  margin-left: 9rem;
+}
+.paidright {
+  margin-right: 9rem;
+}
+
+@media (max-width: 768px) {
+  .getpaidvector {
+    height: 100%;
+    padding: 5rem 0rem;
+  }
+  .greenbgimage {
+    width: 90%;
+    flex-direction: column;
+    padding: 5rem 0rem;
+  }
+  .paidleft {
+    margin-left: 0;
+  }
+  .paidright {
+    width: 90%;
+    margin-right: 0;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .br {
+    background-size: contain;
+    width: 77%;
+    margin: auto;
+    border-top-left-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .paidrighttitle {
+    text-align: center;
+    font-size: 2.9rem;
+    margin: auto;
+    line-height: 5rem;
+  }
+  .paidrightdesc {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+  .downloadbuttong {
+    width: 90%;
+    margin: auto;
+  }
+  .waterimage {
+    flex-direction: column;
+    background-position: center;
+  }
+}

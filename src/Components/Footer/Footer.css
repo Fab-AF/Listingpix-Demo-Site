@@ -1,0 +1,230 @@
+.footercontainer {
+  background: #1d1d1efa;
+  padding: 7rem 0rem;
+}
+.frcoloumnone {
+  color: var(--white);
+  width: 33%;
+}
+.ltalktitle {
+  font-family: Syne;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 8.3rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ltalkdesc {
+  font-family: Syne;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.richusdirectlyparent {
+  margin-top: 4rem;
+}
+.richtitle {
+  font-family: Syne;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: capitalize;
+}
+.emailidtitle,
+.phonetitle {
+  font-family: Syne;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.emailid,
+.phoneno {
+  font-family: Nunito;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.followtitle {
+  font-family: Syne;
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.followicon {
+  align-items: center;
+  margin-top: 2rem;
+}
+.phone,
+.richemail {
+  background-color: #1d1c1f;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85%;
+  border-radius: 10rem;
+  padding: 1rem 2rem;
+  margin-top: 2.5rem;
+}
+.emailicon,
+.phoneicon {
+  width: 80% !important;
+}
+.footerrowone {
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+}
+
+.frcoloumntwo {
+  background-color: #1d1d1e;
+  width: 100%;
+  height: max-content;
+  border-radius: 2rem;
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 3rem 2rem;
+}
+.name,
+.email,
+.phonesubject,
+.project,
+.leaveusmessage {
+  color: #b2b2b3;
+  font-family: Syne;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+input {
+  background: transparent;
+  border: 1px solid #d2d3d2;
+  padding: 1.5rem 9rem 1.5rem 2rem;
+  border-radius: 3rem;
+  margin-top: 0.5rem;
+}
+.message {
+  padding: 1.5rem 9rem 12rem 2rem;
+  border-radius: 1.5rem;
+  margin-top: 0.5rem;
+}
+.nameemail {
+  justify-content: space-between;
+  gap: 1rem;
+}
+.phonesubject {
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.leaveusmessage {
+  margin-top: 3rem;
+}
+.sendbtn {
+  background-color: #101110;
+  color: white;
+  width: fit-content;
+  margin-top: 3rem;
+  padding: 2rem 3rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.sendtext {
+  font-family: Syne;
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  line-height: 1.2rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.footerrowtwo {
+  width: 70%;
+}
+.copy,
+.cookie {
+  font-family: Syne;
+  color: #ababab;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.hr {
+  width: 70%;
+  color: #293342;
+}
+
+@media (max-width: 768px) {
+  .footerrowone {
+    flex-direction: column;
+    width: 90%;
+  }
+  .frcoloumnone {
+    width: 100%;
+  }
+  .frcoloumntwo {
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .nameemail {
+    flex-direction: column;
+  }
+  .email {
+    margin-top: 3rem;
+  }
+  .phonesubject {
+    flex-direction: column;
+  }
+  .project {
+    margin-top: 3rem;
+  }
+  .footerrowtwo {
+    width: 90%;
+    flex-direction: column;
+  }
+  .copy {
+    margin: auto;
+  }
+  .cookie {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .ltalktitle {
+    font-size: 2.9rem;
+    text-align: center;
+  }
+  .ltalkdesc {
+    font-size: 1.7;
+    text-align: center;
+  }
+  .richtitle {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .richemail,
+  .phone {
+    width: 100%;
+  }
+  .socialparent {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .footercontainer {
+    padding: 2rem 0rem;
+  }
+}

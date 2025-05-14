@@ -1,0 +1,9 @@
+.explorefinance > img {
+  position: relative;
+  bottom: 2.8rem;
+}
+@media (max-width: 768px) {
+  .explorefinance > img {
+    display: none;
+  }
+}

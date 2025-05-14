@@ -1,0 +1,100 @@
+.borderbottom {
+  border-bottom: 2px solid #252425;
+}
+.hederhight {
+  height: 11.2rem;
+  background-color: #101110;
+  font-family: "font-family-syne";
+  z-index: 1;
+  position: relative;
+}
+.hcontentheight {
+  height: 11.2rem;
+  font-family: var(--font-family-syne);
+  /* width: 75%; */
+  width: 95%;
+
+  margin: auto;
+}
+
+.navli {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--headingcolor);
+}
+.logo {
+  width: 11.7rem;
+  height: 7.4rem;
+  mix-blend-mode: difference;
+}
+.contactbtn {
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding: 1.3rem 1.2rem;
+  background: linear-gradient(90deg, #015be4 0%, #015be4 0%, #4ab11f 100%);
+}
+.store-icon {
+  width: auto;
+  height: 4rem;
+  margin-right: 0rem;
+  object-fit: contain;
+}
+.dropdowncustom {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1.5rem;
+  align-items: flex-start;
+  width: 12vw;
+  background-color: rgb(50, 47, 47);
+}
+
+@media (max-width: 768px) {
+  .hederhight {
+    height: 8rem;
+  }
+  .hcontentheight {
+    width: 90%;
+    height: 8rem;
+  }
+  .logo {
+    width: 8.7rem;
+    height: 5.4rem;
+  }
+  .mobilemenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--headingcolor);
+    line-height: 5.5rem;
+    font-weight: 500;
+    font-family: var(--font-family-syne);
+    background-color: #101110;
+    font-size: 1.5rem;
+    z-index: 1;
+    position: relative;
+  }
+  .contactbtn {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font-family-syne);
+    padding: 0.8rem 1.5rem;
+  }
+  .contactbg > img {
+    display: none;
+  }
+
+  .customlink {
+    height: 10vw;
+  }
+  .dropdown {
+    width: max-content;
+    left: 0;
+    right: 0;
+    gap: 0rem;
+  }
+  .store-icon {
+    display: none;
+  }
+}

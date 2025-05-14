@@ -1,0 +1,95 @@
+.keyfeaturecontainer {
+  background-color: #1c1d1f;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8rem 0rem;
+  gap: 5rem;
+}
+
+.servicetitle {
+  font-family: var(--font-faimily-syne);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: #f85e9f;
+}
+.kfright {
+  width: 59%;
+
+  align-items: flex-start;
+}
+.kftitle {
+  font-family: Syne;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.cardcontainer {
+  background-image: linear-gradient(to bottom right, #025cdf, #232323);
+  border-radius: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 5rem;
+  min-width: 31rem;
+  min-height: 47rem;
+}
+.cardimage > img {
+  max-width: 63%;
+  margin: auto;
+}
+.cardtitle {
+  font-family: Syne;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  margin: 3rem 0rem;
+}
+.carddesc {
+  font-family: Syne;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .keyfeaturecontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+  }
+  .servicetitle {
+    text-align: center;
+  }
+  .kfright {
+    width: 80%;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cardcontainer {
+    background-image: linear-gradient(to bottom right, #025cdf, #232323);
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 5rem;
+    min-width: 31rem;
+    min-height: 40rem;
+  }
+}

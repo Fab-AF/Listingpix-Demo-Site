@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Syne:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Syne', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --primarycolor: #111111;
+  --secondrycolor: #1b2534;
+  --thirdcolor: #298b00;
+  --headingcolor: #cacaca;
+  --subtextcolor: #fdfdfd;
+  --font-family-nunito: "Nunito", sans-serif;
+  --font-family-syne: "Syne", sans-serif;
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  /* overflow-x: hidden; */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  font-family: var(--font-family-syne);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* For modern browsers */
+img {
+  user-drag: none;
+  user-select: none;
+}
+
+/* For older browsers */
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

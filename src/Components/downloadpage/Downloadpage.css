@@ -1,0 +1,166 @@
+.downlaodpageparent {
+  background-color: #f8f9fa;
+  background-color: #1d1d1e;
+  padding: 7rem 10rem;
+  height: 100vh;
+}
+
+.backtohome {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.download-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3rem;
+  padding: 20px;
+}
+
+.downloaduppercontainer {
+  font-family: var(--font-family-syne);
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 8.3rem;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: capitalize;
+  background: linear-gradient(90deg, #ffffff, #a7a7a7);
+  background-clip: text;
+  color: transparent;
+  width: fit-content;
+  margin: auto;
+}
+
+.app-card {
+  position: relative;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  color: white;
+  /* border: 1px solid white;
+  border-radius: 1rem; */
+}
+
+.downloadbuttonwidth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.downloadbuttonwidth a {
+  width: 40%;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
+}
+
+.app-title {
+  font-family: Syne;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.app-description {
+  font-family: Syne;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.app-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.store-link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.apple-link {
+  background-color: #007aff;
+  color: #ffffff;
+}
+
+.apple-link:hover {
+  background-color: #005bb5;
+}
+
+.google-link {
+  background-color: #34a853;
+  color: #ffffff;
+}
+
+.google-link:hover {
+  background-color: #2b8d3e;
+}
+
+@media (max-width:900px) {
+  .downlaodpageparent {
+    background-color: #f8f9fa;
+    background-color: #1d1d1e;
+    padding: 7rem 10rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .downlaodpageparent {
+    padding: 5rem 2rem;
+  }
+
+  .downloaduppercontainer {
+    font-family: var(--font-family-syne);
+    font-size: 3rem;
+  }
+
+  .download-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+
+  .backtohome {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+  }
+}

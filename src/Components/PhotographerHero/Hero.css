@@ -1,0 +1,180 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper {
+  scale: 0.8;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 5rem;
+}
+
+.heroseccontainerphotographer {
+  background-color: var(--primarycolor);
+  padding: 3.5rem 0rem;
+}
+.eone {
+  position: relative;
+  left: 87%;
+  bottom: 20vh;
+}
+.etwo {
+  position: relative;
+  bottom: 37vh;
+  width: 20%;
+}
+.ethree {
+  position: relative;
+  bottom: 50vh;
+  left: 84%;
+}
+.herotop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.herotitlephotographer {
+  font-family: var(--font-family-syne);
+  color: var(--headingcolor);
+  font-size: 5.1rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+  letter-spacing: 0em;
+  text-align: center;
+  background: -webkit-linear-gradient(
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 230.63%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.herodescriptionphotographer {
+  font-family: var(--font-family-nunito);
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3.1rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #7c7c7c;
+  margin: 1.5rem 0rem;
+  width: 60%;
+}
+.downloadbuttonphotographer {
+  width: 22%;
+  display: flex;
+  justify-content: space-between;
+}
+.playstorephotographer,
+.appstorephotographer {
+  width: 90%;
+}
+.herobottom {
+  padding: 0;
+  margin: 2rem 0rem;
+}
+.mainherimgiphone {
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.8);
+}
+.iphoneimgsize1 {
+  transform: translate(7.5rem);
+  z-index: -2;
+}
+.iphoneimgsize2 {
+  transform: translate(4.5rem);
+  z-index: -1;
+}
+
+.iphoneimgsize4 {
+  transform: translate(-4.5rem);
+  z-index: -1;
+}
+.iphoneimgsize5 {
+  transform: translate(-7.5rem);
+  z-index: -2;
+}
+@media (max-width: 900px) {
+  .swiper {
+    scale: 1;
+  }
+  .swiper-slide img {
+    border-radius: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .swiper-slide img {
+    border-radius: 1rem;
+  }
+  .herotitlephotographer {
+    width: 90%;
+    font-size: 2.9rem;
+    font-weight: 700;
+    line-height: 5rem;
+    text-align: center;
+  }
+  .herodescriptionphotographers {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 90%;
+  }
+  .downloadbutton {
+    width: 75%;
+  }
+  .herobottom {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  .mainherimgiphone {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.2);
+    height: 30vh;
+  }
+  .iphoneimgsize3 {
+    transform: scale(1.3);
+  }
+  .eone {
+    position: relative;
+    left: 69%;
+    bottom: 25vh;
+  }
+  .etwo {
+    position: relative;
+    bottom: 29vh;
+    width: 40%;
+  }
+  .ethree {
+    position: relative;
+    bottom: 16vh;
+    left: 63%;
+    width: 57%;
+  }
+  .herotop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+  }
+}

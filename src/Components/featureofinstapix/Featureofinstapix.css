@@ -1,0 +1,184 @@
+.foicontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c1e;
+  padding: 4rem 0rem;
+}
+.foitop {
+  width: 80%;
+  margin: auto;
+}
+.foimiddle {
+  width: 80%;
+}
+
+.foibottom {
+  width: 73%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+}
+.foibottomright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foititle {
+  font-family: Syne;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 5rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+}
+.foidesc {
+  font-family: Syne;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  width: 54%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1.7rem;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menubuttonclass {
+  background-color: transparent;
+  border: 1px solid gray;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  font-family: syne;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #b8b8b8;
+  cursor: pointer;
+}
+.selected {
+  background: radial-gradient(
+    79.3% 848.37% at 6.05% 13.54%,
+    #8c66fb 0%,
+    #01c2de 100%
+  );
+  color: white;
+}
+
+.foibottomleft {
+  width: 100%;
+}
+.menutitle {
+  font-family: Syne;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.menudesc {
+  font-family: Syne;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: white;
+  text-align: left;
+  margin: 3rem 0rem;
+}
+.skyimgwidth {
+  max-width: 78%;
+}
+
+.menudownload {
+  font-family: Syne;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, #015be4 0%, #015be4 0%, #4ab11f 100%);
+}
+.beforebutton {
+  position: relative;
+  bottom: 75%;
+  left: 4%;
+}
+.afterbutton {
+  position: relative;
+  bottom: 25%;
+  left: 75%;
+}
+@media (max-width: 768px) {
+  .foitop {
+    width: 90%;
+    margin: auto;
+  }
+  .foimiddle {
+    width: 100%;
+  }
+  .foidesc {
+    width: 100%;
+  }
+  .foibottom {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .foibottomleft {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menudesc {
+    text-align: center;
+  }
+  .skyimgwidth {
+    max-width: 90%;
+    margin-top: 3rem;
+  }
+  .menu {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  .mobilesetgap {
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .leftcontsetmobile,
+  .rightcontsetmobile {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .beforebutton {
+    position: relative;
+    top: 1rem;
+    left: -35%;
+  }
+  .afterbutton {
+    position: relative;
+    bottom: 3.5rem;
+    left: 36%;
+  }
+}

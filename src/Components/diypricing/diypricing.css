@@ -1,0 +1,112 @@
+.pricingcontainer {
+    background: #101011 !important;
+    padding: 4rem 0rem;
+  }
+  .pricingtitle {
+    font-family: Syne;
+    font-size: 5.3rem;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+  .pricedesc {
+    font-family: Syne;
+    font-size: 1.6rem;
+    width: 100%;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .pricingmaincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .pricingcardbody {
+    max-width: 20%;
+    background-color: #015be4;
+    border-radius: 2rem;
+    border: none;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+  .creditfont{
+    font-size: 16px;
+  }
+  .dollortitle {
+    font-family: Syne;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .usd {
+    font-family: Syne;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .feature {
+    font-family: Syne;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.8999999761581421px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .featuredesc {
+    font-family: Syne;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .buttonbg {
+    background: linear-gradient(90deg, #015be4 0%, #015be4 0%, #4ab11f 100%),
+      linear-gradient(0deg, #ffffff, #ffffff);
+    padding: 1.8rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 6rem;
+    font-family: Syne;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.600000023841858px;
+    text-align: center;
+    min-width: 14rem;
+  }
+  .buttonbg:hover {
+    background: transparent;
+    border: 1px solid linear-gradient(90deg, #015be4 0%, #015be4 0%, #4ab11f 100%),
+      linear-gradient(0deg, #ffffff, #ffffff);
+    color: linear-gradient(90deg, #015be4 0%, #015be4 0%, #4ab11f 100%),
+      linear-gradient(0deg, #ffffff, #ffffff);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  @media (max-width: 768px) {
+    .pricingmaincontainer {
+      flex-direction: column;
+    }
+    .pricedesc {
+      width: 90%;
+    }
+    .pricingcardbody {
+      max-width: 90%;
+    }
+    .feature {
+      margin-bottom: 2rem;
+    }
+  }
+  

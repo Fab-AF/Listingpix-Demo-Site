@@ -1,0 +1,36 @@
+.expphotographercontainer {
+  background-color: #101011;
+  color: var(--white);
+  padding: 7rem 0rem;
+}
+.expphotographercontent {
+  width: 84%;
+  margin: auto;
+}
+.eptitle {
+  font-family: Syne;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.epdesc {
+  font-family: Syne;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .expphotographercontainer {
+    padding: 3rem 0rem;
+  }
+  .expphotographercontent {
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+  }
+}

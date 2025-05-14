@@ -1,0 +1,9 @@
+.joinphoto > img {
+  position: relative;
+  bottom: 3.5rem;
+}
+@media (max-width: 768px) {
+  .joinphoto > img {
+    display: none;
+  }
+}

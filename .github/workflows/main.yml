@@ -1,0 +1,85 @@
+name: Live Server Deployment
+
+on:
+   push:
+      branches:
+         - main
+
+jobs:
+  deploy:
+    runs-on: listingpix
+
+    steps:
+    - name: Check Directory available or not
+      run: |
+
+          cd /var/www/Listingpix || { echo "Directory not found"; exit 1; }  
+          echo "YES! Project is available."
+
+    - name: Check for uncommitted changes
+      id: check_changes
+      run: |
+
+        cd /var/www/Listingpix
+
+        if [[ -n $(git status --porcelain) ]]; then
+          echo "Uncommitted changes found."
+          echo "UNCOMMITTED_CHANGES=true" >> $GITHUB_ENV
+        else
+          echo "No uncommitted changes."
+          echo "UNCOMMITTED_CHANGES=false" >> $GITHUB_ENV
+        fi  
+
+    - name: Commit changes if necessary
+      if: env.UNCOMMITTED_CHANGES == 'true'
+      run: |
+
+        cd /var/www/Listingpix
+
+        git add .
+        git commit -m "Automated commit before switching to origin/main branch on $(date +'%d/%m/%y-%H-%M')"
+
+    - name: Checkout to main branch if necessary
+      run: |
+
+        cd /var/www/Listingpix
+
+        CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
+        if [ "$CURRENT_BRANCH" != "main" ]; then
+          echo "Not on main branch. Checking out to main..."
+          git checkout main
+        else
+          echo "Already on main branch."
+        fi
+
+
+    - name: Create temp branch
+      run: |
+
+         cd /var/www/Listingpix
+         git branch -f temp
+
+    - name: Deploy to mainelopment Server
+      run: |
+
+          cd /var/www/Listingpix
+          
+          echo "Aborting any ongoing merge..."
+          git merge --abort || true
+
+          echo "Resetting any local changes..."
+          git reset --hard HEAD || { echo "Git reset failed" && exit 1; }
+
+          echo "Pulling latest code from main branch..."
+          git fetch origin main || { echo "Git fetch failed" && exit 1; }
+          
+          echo "Resetting to origin/main..."
+          git reset --hard origin/main || { echo "Git reset failed"; git reset --hard temp && exit 1; }
+
+          echo "Npm update..."
+          npm update -f
+
+          echo "Npm creating Build..."
+          npm run build
+          
+          echo "Deployment completed successfully."
