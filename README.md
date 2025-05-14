@@ -2,6 +2,8 @@
 
 A React-based web application for a real estate photography service platform. This demo showcases a multi-page website with various features for real estate agents, photographers, and DIY users.
 
+**Live Demo:** [https://listingpix.com/](https://listingpix.com/)
+
 ## Project Overview
 
 ListingPix is a platform that connects real estate agents with professional photographers and provides AI-enhanced photo editing tools. The platform offers three main services:
@@ -116,4 +118,4 @@ This project is for demonstration purposes only.
 
 ## Contact
 
-For any questions about this demo, please contact demo@example.com.
+For any questions about this demo, please contact info@dummy-email.com.
